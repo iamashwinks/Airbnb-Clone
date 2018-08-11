@@ -1,0 +1,46 @@
+.background_img{
+	background-image: url("https://a0.muscache.com/4ea/air/r:w3100-h1200-sfit,e:fjpg-c80/pictures/318dae49-6efb-484c-b4d2-b3d84c2bcd4e.jpg");
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+.navbar.navbar-expand-lg.navbar-light li a{
+	color: white;
+	margin-bottom: 20px;
+    padding: 14px 16px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar.navbar-expand-lg.navbar-light li a:hover {
+	color: white;
+	border-bottom: 3px solid white;
+}
+
+.checked {
+    color: rgb(0,132,137)
+}
+
+.btn-primary.btn-lg {
+	background-color: rgb(255,90,95);
+	border-color: rgb(255,90,95);
+	font-size: 16px;
+}
+
+.container li a {
+	color: #767676;
+}
+
+.btn.btn-outline-primary.rounded.nohover {
+	pointer-events: none;
+}
+
+.btn.btn-primary.new {
+	background-color: rgb(0, 106, 112);
+	border: none;
+	font-size: 12px;
+	padding: 1px 4px;
+}
