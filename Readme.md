@@ -2,9 +2,6 @@
 
 ### A clone of Airbnb website done using HTML and CSS and Bootstrap 4. ###
 
-<button class="button-save large">Airbnb</button>
-
-
 The website that we are about to clone is https://airbnb.com
 
 This is a demo project for understanding how to use HTML, CSS and Bootstrap to build a website of your own.
