@@ -1,0 +1,94 @@
+<!-- Airbnb clone using external CSS -->
+
+<!-- With an external style sheet, you can change the look of an entire website by changing just one file!
+
+Each page must include a reference to the external style sheet file inside the <link> element. The <link> element goes inside the <head> section. -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<!-- The name between <title> tag defines the title of the document. -->
+
+		<title>Airbnb Clone</title>
+
+		<!-- The Styles used has been stored and saved in another file named "style.css" and linked through <link> tag as shown below: -->
+
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		<!-- This is to display the Navbar of the website. -->
+
+		<nav>
+			<ul>
+				<li><a class="active" href="#home">Become a host</a></li>
+				<li><a href="#news">Earn credit</a></li>
+				<li><a href="#contact">Help</a></li>
+				<li><a href="#about">SignUp</a></li>
+				<li><a href="#login">Login</a></li>
+			</ul>
+		</nav>
+
+		<!-- This is to make the Form Contents appear on the Image -->
+
+		<div class="form-group">
+			<form action="/">
+				<h2>Book unique home and experiences</h2>
+				<label>WHERE</label><br>
+				<input type="text" placeholder="Anywhere"/><br><br>
+				<label>CHECKIN</label> &emsp; &emsp; &emsp; &emsp; &emsp;
+				<label>CHECKOUT</label><br>
+				<input type="text" placeholder="dd-mm-yyyy"/>
+				<input type="text" placeholder="dd-mm-yyyy"/><br><br>
+				<label>GUESTS</label><br>
+				<select name="guests">
+					<option value="Adults">Adults</option>
+					<option value="Children">Children</option>
+					<option value="Infant">Infant</option>
+				</select><br><br>
+				<input type="submit" value="Search">
+			</form>
+		</div>
+
+		<!-- Form Ends here. -->
+
+		<!-- The below section displays the Reviews and Feedbacks given by the users. -->
+
+		<div style="padding: 2px 100px;">
+			<h3>What guests are saying about homes in India</h3>
+			<p>India homes were rated
+				<strong>4.6 out of 5 stars</strong>
+				with <strong> 210,000+ reviews </strong>
+			</p><br>
+		</div>
+
+		<!-- Reviews and Feedbacks which uses Flex property, includes images  -->
+
+		<div class="container">
+			<div>
+				<img src="https://a0.muscache.com/im/pictures/8650182/506aa978_original.jpg?aki_policy=large" height="200"><br>
+			</div>
+			<div>
+				<img src="https://a0.muscache.com/im/pictures/7517954/21419416_original.jpg?aki_policy=large" height="200"><br>
+			</div>
+			<div>
+				<img src="https://a0.muscache.com/im/pictures/d90a9b58-80da-4148-8a1c-2a1f1218d575.jpg?aki_policy=large" height="200"><br>
+			</div>
+		</div>
+
+		<!-- Reviews and Feedbacks which uses Flex property, includes text -->
+
+		<div class="container">
+			<div>
+				<p>Ginza is very jovial and extreamly helpful. Guided me to the best restaurants according to my asks. The description of the place was ...</p><br>
+			</div>
+			<div>
+				<p>Nalin is the perfect airbnb host! He was extremely helpful every step of the way, arranging for a pickup from the airport, ...</p><br>
+			</div>
+			<div>
+				<p>A delightful and warm hospitality by The wonderful Kalpana. The room was beautiful, everything clean and full of thought and ...</p><br>
+			</div>
+		</div>
+	</body>
+</html>

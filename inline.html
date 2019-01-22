@@ -1,26 +1,39 @@
-<!-- Airbnb clone using Inline Css -->
+<!-- Airbnb clone using Inline CSS -->
+
+<!-- An inline style may be used to apply a unique style for a single element.
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property. -->
+
 <!DOCTYPE html>
 <html>
 	<head>
+
+		<!-- The name between <title> tag defines the title of the document. -->
+
 		<title>Airbnb Clone</title>
 	</head>
 	<body>
 
-		<!-- Navbar -->
+		<!-- This is to display the Navbar of the website. -->
 		<!-- Styling is added inline so that navbar appears on the image -->
-		<ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: rgba(0,0,0,0.3);">
-		  <li style="float: right;"><a class="active" href="#home" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Become a host</a></li>
-		  <li style="float: right;"><a href="#news" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Earn credit</a></li>
-		  <li style="float: right;"><a href="#contact" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Help</a></li>
-		  <li style="float: right;"><a href="#about" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">SignUp</a></li>
-		  <li style="float: right;"><a href="#login" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Login</a></li>
-		</ul>
 
-		<!-- Background-image which uses Flex property -->
+		<nav>
+			<ul style="list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: rgba(0,0,0,0.3);">
+				<li style="float: right;"><a class="active" href="#home" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Become a host</a></li>
+				<li style="float: right;"><a href="#news" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Earn credit</a></li>
+				<li style="float: right;"><a href="#contact" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Help</a></li>
+				<li style="float: right;"><a href="#about" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">SignUp</a></li>
+				<li style="float: right;"><a href="#login" style="display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Login</a></li>
+			</ul>
+		</nav>
 		<div style="display: flex; padding-bottom: 100px">
-			<img src="https://a0.muscache.com/4ea/air/r:w775-h300-sfit,e:fjpg-c80/pictures/318dae49-6efb-484c-b4d2-b3d84c2bcd4e.jpg" width="100%" height="500" style="position: absolute;">	
 
-			<!-- Form Entry with position relative so that in appers on the Image -->					
+			<!-- This is to display the Background-image which uses Flex property. -->
+
+			<img src="https://a0.muscache.com/4ea/air/r:w775-h300-sfit,e:fjpg-c80/pictures/318dae49-6efb-484c-b4d2-b3d84c2bcd4e.jpg" width="100%" height="500" style="position: absolute;">
+
+			<!-- This is to make the Form Contents with position relative so that in appears on the Image -->
+
 			<form action="/" style="position: relative; margin: 70px; max-width: 400px; padding: 16px; background-color: white;">
 				<h2>Book unique home and experiences</h2>
 				<label>WHERE</label><br />
@@ -37,18 +50,23 @@
 				</select><br /><br />
 				<input type="submit" value="Search">
 			</form>
+
+			<!-- Form Ends here. -->
+
 		</div>
 
-		<!-- Reviews and Feedbacks -->
+		<!-- The below section displays the Reviews and Feedbacks given by the users. -->
+
 		<div style="padding: 2px 100px;">
 			<h3>What guests are saying about homes in India</h3>
-			<p>India homes were rated 
-			<strong>4.6 out of 5 stars</strong>
-			 with <strong> 210,000+ reviews </strong>
+			<p>India homes were rated
+				<strong>4.6 out of 5 stars</strong>
+				with <strong> 210,000+ reviews </strong>
 			</p><br />
 		</div>
 
 		<!-- Reviews and Feedbacks which uses Flex property, includes images  -->
+
 		<div style="display: flex; justify-content:center; align-items: center;">
 			<div style=" margin: 10px; padding: 5px 50px;">
 				<img src="https://a0.muscache.com/im/pictures/8650182/506aa978_original.jpg?aki_policy=large" height="200"><br />
@@ -62,6 +80,7 @@
 		</div>
 
 		<!-- Reviews and Feedbacks which uses Flex property, includes text  -->
+
 		<div style="display: flex; justify-content:center; align-items: center;">
 			<div style=" margin: 10px; padding: 5px 50px;">
 				<p>Ginza is very jovial and extreamly helpful. Guided me to the best restaurants according to my asks. The description of the place was ...</p><br />

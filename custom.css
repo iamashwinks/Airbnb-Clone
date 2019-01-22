@@ -1,3 +1,6 @@
+/* An external style sheet can be written in any text editor. The file should not contain any html tags. The style sheet file must be saved with a .css extension. */
+
+/* Element Selector */
 .background_img{
 	background-image: url("https://a0.muscache.com/4ea/air/r:w3100-h1200-sfit,e:fjpg-c80/pictures/318dae49-6efb-484c-b4d2-b3d84c2bcd4e.jpg");
 	background-repeat: no-repeat;
@@ -7,6 +10,7 @@
 	position: relative;
 }
 
+/* For styling NavBar */
 .navbar.navbar-expand-lg.navbar-light li a{
 	color: white;
 	margin-bottom: 20px;

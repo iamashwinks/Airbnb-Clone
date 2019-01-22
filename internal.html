@@ -1,20 +1,43 @@
 <!-- Airbnb clone using Internal CSS -->
+
+<!-- An internal style sheet may be used if one single page has a unique style.
+	
+Internal styles are defined within the <style> element, inside the <head> section of an HTML page. -->
+	
 <!DOCTYPE html>
 <html>
 	<head>
+
+		<!-- The name between <title> tag defines the title of the document. -->
+
 		<title>Airbnb Clone</title>
+
 		<!-- Style added using Internal CSS -->
-		<!-- Tag elements referenced using thier names, ex. body, ul, etc., 
-			 Ids referenced using '#' symbol, ex. #myid {...}, etc.,
-			 Classes referenced using '.' operator, ex. .container, .form, etc. -->
+
+		<!-- CSS Selectors -->
+		<!-- CSS selectors are used to "find" (or select) HTML elements based on their element name, id, class, attribute, and more. -->
+		
+		<!-- The element selector selects elements based on the element name, ex. body, ul, etc.  -->
+
+		<!-- The id selector uses the id attribute of an HTML element to select a specific element. The id of an element should be unique within a page, so the id selector is used to select one unique element!
+		To select an element with a specific id, write a hash (#) character, followed by the id of the element, ex. #myid {...}, etc. -->
+
+		<!-- The class selector selects elements with a specific class attribute.
+		To select elements with a specific class, write a period (.) character, followed by the name of the class, ex. .container, .form, etc.-->
+
 		<style>
+
+		/* Element Selector */
 			body {
+
+				/* For setting Background Image. */
 				background-image: url("https://a0.muscache.com/4ea/air/r:w775-h300-sfit,e:fjpg-c80/pictures/318dae49-6efb-484c-b4d2-b3d84c2bcd4e.jpg");
 				position: absolute;
 				background-repeat: no-repeat;
 				background-size: 1400px 700px;
 			}
 
+			/* For styling NavBar */
 			ul {
 				list-style-type: none;
 				margin: 0;
@@ -39,7 +62,9 @@
 				background-color: #ddd;
 				color: black;
 			}
+			/* End of NavBar styling. */
 
+			/* Styling Form Elements. Making the form to display on thee Image. */
 			form {
 				position: relative;
 				margin: 70px;
@@ -64,21 +89,26 @@
 				padding: 5px 50px;
 			}
 		</style>
+		<!-- End of Internal Styling -->
+
 	</head>
 	<body>
 
-		<!-- Navbar -->
-		<ul>
-		  <li><a class="active" href="#home">Become a host</a></li>
-		  <li><a href="#news">Earn credit</a></li>
-		  <li><a href="#contact">Help</a></li>
-		  <li><a href="#about">SignUp</a></li>
-		  <li><a href="#login">Login</a></li>
-		</ul>
+		<!-- This is to display the Navbar of the website. -->
 
-		<!-- Form Entry -->			
+		<nav>
+			<ul>
+				<li><a class="active" href="#home">Become a host</a></li>
+				<li><a href="#news">Earn credit</a></li>
+				<li><a href="#contact">Help</a></li>
+				<li><a href="#about">SignUp</a></li>
+				<li><a href="#login">Login</a></li>
+			</ul>
+		</nav>
+
+		<!-- This is to make the Form Contents appear on the Image -->
+
 		<div class="form-group">
-		
 			<form action="/">
 				<h2>Book unique home and experiences</h2>
 				<label>WHERE</label><br />
@@ -97,16 +127,20 @@
 			</form>
 		</div>
 
-		<!-- Reviews and Feedbacks -->
+		<!-- Form Ends here. -->
+
+		<!-- The below section displays the Reviews and Feedbacks given by the users. -->
+
 		<div style="padding: 2px 100px;">
 			<h3>What guests are saying about homes in India</h3>
-			<p>India homes were rated 
-			<strong>4.6 out of 5 stars</strong>
-			 with <strong> 210,000+ reviews </strong>
+			<p>India homes were rated
+				<strong>4.6 out of 5 stars</strong>
+				with <strong> 210,000+ reviews </strong>
 			</p><br />
 		</div>
 
-		<!-- Reviews and Feedbacks which uses Flex property, includes images  -->
+		<!-- Reviews and Feedbacks which uses Flex property, includes images -->
+
 		<div class="container">
 			<div>
 				<img src="https://a0.muscache.com/im/pictures/8650182/506aa978_original.jpg?aki_policy=large" height="200"><br />
@@ -119,7 +153,8 @@
 			</div>
 		</div>
 
-		<!-- Reviews and Feedbacks which uses Flex property, includes text -->
+		<!-- Reviews and Feedbacks which uses Flex property, includes text  -->
+
 		<div class="container">
 			<div>
 				<p>Ginza is very jovial and extreamly helpful. Guided me to the best restaurants according to my asks. The description of the place was ...</p><br />
